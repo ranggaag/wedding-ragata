@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    background-color: rgba(22, 22, 22, 1);
+}
+
+@font-face {
+    font-family: "Brown Sugar";
+    src : local("Brown Sugar"),
+    url('../fonts/brown-sugar/brown-sugar.ttf') format("truetype");
+}
+
+h2 {
+    font-family: "Cormorant", serif;
+}
+
+.allura {
+    font-family: "Allura", cursive;
+}
