@@ -8,7 +8,7 @@ const index = () => {
         <section className="">
             <Cover />
         </section>    
-        <section className="px-5 py-20">
+        <section id="2" className="px-5 py-20">
           <SectionTwo />
         </section>
         <section className="px-5 py-20">

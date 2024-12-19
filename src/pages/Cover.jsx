@@ -60,6 +60,7 @@ const Cover = () => {
                     <div className="mt-3">
                         <CoverButton
                             name="Buka Undangan"
+                            href="#2"
                         />
                     </div>
                 </div>
