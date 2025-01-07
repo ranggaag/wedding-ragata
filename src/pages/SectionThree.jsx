@@ -1,20 +1,53 @@
+import ImageComponent from "../components/images/ImageComponent"
 import DescriptionText from "../components/text/DescriptionText"
 import MainTitle from "../components/title/MainTitle"
+import ImgBride from "../assets/images/bride.png"
+import ImgGroom from "../assets/images/groom.png"
+import NameCard from "../components/cards/NameCard"
+import IconCincin from "../assets/images/cincin-icon.png"
 
 const SectionThree = () => {
   return (
-    <div className="flex flex-col gap-8 items-center">
+    <div className="flex flex-col gap-24 items-center">
+        <div className="flex flex-col gap-8 items-center text-black-rangga">
+            <div className="flex flex-col gap-3 items-center">
+                <MainTitle
+                    title="Assalamualaikum wr. wb."
+                />
+                <DescriptionText>
+                Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara pernikahan kami.
+                </DescriptionText>
+            </div>
+            <div className="flex flex-col gap-8">
+                <ImageComponent
+                    image={ImgBride}
+                />
+                <NameCard
+                    mempelai="Iftah Nurdiyanti"
+                    gender="Putri"
+                    bapak="Muhammad Hasim"
+                    ibu="Saleha (Almh)"
+                    ig="https://instagram.com/iftahh_in"
+                    border="border-black-rangga"
+                />
+            </div>
+        </div>
         <div>
-            <MainTitle
-                name="Mempelai"
-            />
+            <img src={IconCincin} alt="" className="size-16" />
         </div>
-        <div className="w-[322px] mx-auto">
-            <DescriptionText
-                description="Mahasuci (Allah) yang telah menciptakan semuanya berpasang-pasangan, baik dari apa yang ditumbuhkan oleh bumi dan dari diri mereka sendiri maupun dari apa yang tidak mereka ketahui."
-            />
-        </div>
-
+        <div className="flex flex-col gap-8">
+                <ImageComponent
+                    image={ImgGroom}
+                />
+                <NameCard
+                    mempelai="Rangga Abdul Gani"
+                    gender="Putra"
+                    bapak="Abdul Manaf (Alm)"
+                    ibu="Yoyoh Badriah"
+                    ig="https://instagram.com/abdghani_rangga"
+                    border="border-black-rangga"
+                />
+            </div>
     </div>
   )
 }

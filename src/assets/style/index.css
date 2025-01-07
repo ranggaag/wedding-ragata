@@ -1,25 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+@layer {
+    .weddingof {
+        @apply text-base average uppercase text-white-middle
+    }
+}
+
 
 body {
-    background-color: rgba(22, 22, 22, 1);
+    background-color: #161616;
+    font-family: "Cardo", serif;
 }
 
-@font-face {
-    font-family: "Brown Sugar";
-    src : local("Brown Sugar"),
-    url('../fonts/brown-sugar/brown-sugar.ttf') format("truetype");
+.great-vibes {
+    font-family: "Great Vibes", serif;
 }
 
-h2 {
-    font-family: "Cormorant", serif;
+.cormorant-infrant {
+    font-family: "Cormorant Infant", serif;
 }
 
-.allura {
-    font-family: "Allura", cursive;
+.average {
+    font-family: "Average", serif;
+}
+
+.overlay {
+    background: linear-gradient(to bottom, rgba(23,24,37,0.1) 0%, rgba(23,24,37,1) 100%);
+}
+
+.overlay-to-top {
+    background : linear-gradient(to top, rgba(23,24,37,0.3) 0%, rgba(23,24,37,1) 100% );
+}
+
+.overlay-to-bottom {
+    background : linear-gradient(to bottom, rgba(23,24,37,0.3) 0%, rgba(23,24,37,1) 100% );
+}
+
+.img-card {
+    background-image: url("../images/DSCF4290-10294.png");
+}
+
+.bg-bride {
+    background-image: url('../images/DSCF4286-1.png');
+}
+
+.bg-groom {
+    background-image: url('../images/DSCF4281-458575-1.png');
+}
+
+.bg-overlay {
+    background-color: rgba(23, 24, 37, 0.5);
+}
+
+.border-radius {
+    border-radius : 1000px 1000px 50px 50px;
 }

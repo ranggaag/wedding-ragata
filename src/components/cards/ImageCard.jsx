@@ -1,26 +1,50 @@
-import Image from "../../assets/images/IMG_5723.png"
+import PropTypes from "prop-types"
+import ImageComponent from "../images/ImageComponent"
 
-const ImageCard = () => {
+const ImageCard = ({ image }) => {
+
+    const Line = () => {
+        return (
+            <span className="bg-white-middle w-[2px] h-[125px] rounded-full"></span>
+        )
+    }
+
+    const TextContent = ( { children }) => {
+        return (
+            <h2 className="text-white-middle text-xl leading-10 text-center average">
+                {children}
+            </h2>
+        )
+    }
+
+    TextContent.propTypes = {
+        children: PropTypes.string.isRequired
+    }
+
   return (
     <div className="flex flex-raw gap-3">
         <div className="flex flex-col justify-center items-center gap-2">
-            <span className="bg-white-middle w-[2px] h-60 rounded-full"></span>
-            <h2 className="text-white-middle text-3xl leading-10 text-center">
+            <Line />
+            <TextContent>
                 25<br />01<br />25
-            </h2>
+            </TextContent>
         </div>
-        <div className="">
-            <img src={Image} alt="image" className="w-64 h-96 object-cover rounded-3xl"/>
-        </div>
+        <ImageComponent
+            image={image}
+        />
         <div className="flex flex-col justify-center items-center gap-2">
-            <h2 className="text-white-middle text-3xl leading-10 text-center allura">
+            <TextContent>
                 I<br />&<br />R
-            </h2>
-            <span className="bg-white-middle w-[2px] h-60 rounded-full"></span>
+            </TextContent>
+            <Line />
         </div>
 
     </div>
   )
+}
+
+ImageCard.propTypes = {
+    image: PropTypes.string.isRequired
 }
 
 export default ImageCard

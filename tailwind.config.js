@@ -6,17 +6,15 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage : {
-        bgCover : "url('/src/assets/images/IMG_5742.JPG')",
-        bgOverlay : "linear-gradient(to bottom, rgba(23, 24, 37, 0.3) 10%, rgba(23, 24, 37, 0.9) 100%)"
-      },
       colors : {
         'black-middle' : '#161616',
         'white-middle' : '#FEFEFE',
-        'blue-dark' : '#171825'
+        'blue-dark' : '#171825',
+        'grey-light' : '#D9D9D9',
+        'black-rangga' : '#121212'
       },
-      fontFamily : {
-        brownSugar : ['Brown Sugar']
+      backgroundImage : {
+        'coverImg' : "url('/src/assets/images/DSCF4332-12323-1.png')"
       }
     },
   },

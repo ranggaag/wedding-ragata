@@ -1,15 +1,15 @@
 import PropTypes from "prop-types"
 
-const MainTitle = ({ name }) => {
+const MainTitle = ({ title }) => {
   return (
-    <h1 className="allura text-white-middle text-3xl">
-        {name}
+    <h1 className="great-vibes text-4xl">
+        {title}
     </h1>
   )
 }
 
 MainTitle.propTypes = {
-    name : PropTypes.string.isRequired
+    title : PropTypes.string.isRequired
 }
 
 export default MainTitle

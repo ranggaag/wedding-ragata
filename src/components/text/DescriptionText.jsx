@@ -1,15 +1,15 @@
 import PropTypes from "prop-types"
 
-const DescriptionText = ({ description }) => {
+const DescriptionText = ({ children }) => {
   return (
-    <h2 className="text-white-middle text-center text-sm font-medium">
-        {description}
+    <h2 className="text-center text-sm leading-6">
+        {children}
     </h2>
   )
 }
 
 DescriptionText.propTypes = {
-    description : PropTypes.string.isRequired
+    children : PropTypes.node.isRequired
 }
 
 export default DescriptionText
