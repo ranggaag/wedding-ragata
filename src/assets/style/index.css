@@ -7,7 +7,7 @@
 
 @layer {
     .weddingof {
-        @apply text-base average uppercase text-white-middle
+        @apply text-sm average capitalize text-white-middle
     }
 }
 
@@ -30,27 +30,15 @@ body {
 }
 
 .overlay {
-    background: linear-gradient(to bottom, rgba(23,24,37,0.1) 0%, rgba(23,24,37,1) 100%);
+    background: linear-gradient(to bottom, rgba(23,24,37,0.1) 0%, rgba(23,24,37,1) 92%);
 }
 
-.overlay-to-top {
-    background : linear-gradient(to top, rgba(23,24,37,0.3) 0%, rgba(23,24,37,1) 100% );
-}
-
-.overlay-to-bottom {
-    background : linear-gradient(to bottom, rgba(23,24,37,0.3) 0%, rgba(23,24,37,1) 100% );
+.linear-section-two {
+    background: linear-gradient(to bottom, rgba(23, 24, 37, 0.6) 64%, rgba(217, 217, 217, 1) 100%)
 }
 
 .img-card {
     background-image: url("../images/DSCF4290-10294.png");
-}
-
-.bg-bride {
-    background-image: url('../images/DSCF4286-1.png');
-}
-
-.bg-groom {
-    background-image: url('../images/DSCF4281-458575-1.png');
 }
 
 .bg-overlay {

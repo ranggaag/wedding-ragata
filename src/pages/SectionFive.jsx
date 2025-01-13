@@ -1,27 +1,24 @@
-import ImgEvent from "../assets/images/image-event.png"
-import EventCard from "../components/cards/EventCard"
-import ImageEvent from "../components/images/ImageEvent"
+import MainTitle from "../components/title/MainTitle"
+import CountDownTimer from "../components/fiture/CountDownTimer/CountDownTimer"
+import NavButton from "../components/button/NavButton";
 
 const SectionFive = () => {
+  const weddingDate = '2025-01-25T08:00:00';
+
   return (
-    <div className="flex flex-col gap-8 items-center bg-grey-light border-radius p-5">
-        <ImageEvent
-            image={ImgEvent}
-        />
-        <EventCard
-            title="Akad"
-            date="sabtu, 25 januari 2025"
-            time="08.00 - Selesai"
-            location="Kediaman Mempelai Wanita"
-            address="Jl. Darma Wanita V No. 31 RT 07/RW 01 Kel. Rawa Buaya, Kec. Cengkareng, Jakarta Barat DKI Jakarta 11740"
-        />
-        <EventCard
-            title="Resepsi"
-            date="sabtu, 25 januari 2025"
-            time="10.00 - Selesai"
-            location="Kediaman Mempelai Wanita"
-            address="Jl. Darma Wanita V No. 31 RT 07/RW 01 Kel. Rawa Buaya, Kec. Cengkareng, Jakarta Barat DKI Jakarta 11740"
-        />
+    <div className="flex flex-col gap-24 items-center">
+        <div className="flex flex-col gap-8 items-center text-white-middle">
+            <MainTitle title="Countdown Timer" />
+            <CountDownTimer
+                targetDate={weddingDate}
+            />
+            <NavButton
+                link="https://calendar.app.google/wRyh73ZDwE1DbgeE6"
+                icon=""
+                text="Save The Date"
+                border="border-white-middle"
+            />
+        </div>
     </div>
   )
 }

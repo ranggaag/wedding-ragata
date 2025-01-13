@@ -1,24 +1,31 @@
-import MainTitle from "../components/title/MainTitle"
-import CountDownTimer from "../components/fiture/CountDownTimer/CountDownTimer"
-import NavButton from "../components/button/NavButton";
+import EventCard from "../components/cards/EventCard"
+import LocationCard from "../components/cards/LocationCard"
 
 const SectionFour = () => {
 
-    const weddingDate = '2025-01-25T08:00:00';
-
   return (
-    <div className="flex flex-col gap-24 items-center">
-        <div className="flex flex-col gap-8 items-center text-white-middle">
-            <MainTitle title="Save The Date" />
-            <CountDownTimer
-                targetDate={weddingDate}
+    <div>
+        <div className="fixed left-0 bottom-0 right-0 bg-event-img w-full h-screen lg:w-[30%] mx-auto bg-cover bg-no-repeat -z-10">
+        </div>
+        <div className="px-10 py-32 bg-blue-dark bg-opacity-60 ">
+            <div className="px-5 py-10 bg-white-middle bg-opacity-20 rounded-lg flex flex-col gap-10 items-center justify-center">
+            <EventCard
+                title="Akad"
+                date="sabtu, 25 januari 2025"
+                time="08.00 - Selesai"
             />
-            <NavButton
-                link="https://calendar.app.google/wRyh73ZDwE1DbgeE6"
-                icon=""
-                text="Save The Date"
-                border="border-white-middle"
+            <EventCard
+                title="Resepsi"
+                date="sabtu, 25 januari 2025"
+                time="08.00 - Selesai"
             />
+            <LocationCard
+                title="Lokasi"
+                location="Kediaman Mempelai Wanita"
+                address="Jl. Darma Wanita V No. 31 RT 07/RW 01 Kel. Rawa Buaya, Kec. Cengkareng, Jakarta Barat DKI Jakarta 11740"
+            />
+            </div>
+            
         </div>
     </div>
   )

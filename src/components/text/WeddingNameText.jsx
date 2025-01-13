@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const WeddingNameText = ({ children }) => {
   return (
-    <h1 className="text-3xl text-white-middle average uppercase">
+    <h1 className="text-2xl text-white-middle average uppercase">
         {children}
     </h1>
   )

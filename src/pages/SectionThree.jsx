@@ -1,19 +1,19 @@
 import ImageComponent from "../components/images/ImageComponent"
 import DescriptionText from "../components/text/DescriptionText"
-import MainTitle from "../components/title/MainTitle"
 import ImgBride from "../assets/images/bride.png"
 import ImgGroom from "../assets/images/groom.png"
 import NameCard from "../components/cards/NameCard"
 import IconCincin from "../assets/images/cincin-icon.png"
+import Bismillah from "../assets/images/bismillah.svg"
 
 const SectionThree = () => {
   return (
     <div className="flex flex-col gap-24 items-center">
-        <div className="flex flex-col gap-8 items-center text-black-rangga">
-            <div className="flex flex-col gap-3 items-center">
-                <MainTitle
-                    title="Assalamualaikum wr. wb."
-                />
+        <div className="flex flex-col gap-24 items-center text-black-rangga">
+            <div className="flex flex-col gap-4 items-center text-center">
+                <span>
+                    <img src={Bismillah} alt="" />
+                </span>
                 <DescriptionText>
                 Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara pernikahan kami.
                 </DescriptionText>

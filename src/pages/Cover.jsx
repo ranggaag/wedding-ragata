@@ -9,9 +9,13 @@ const Cover = () => {
     const [guestName, setGusetName] = useState("Nama Tamu")
     const [loading, setLoading] = useState(true)
     const [isClick, setIsClick] = useState(false)
+    const [isClicked, setIsClicked] = useState(false);
 
     const toggleClick = () => {
-        setIsClick(!isClick)
+        if(!isClicked) {
+            setIsClick(!isClick)
+            setIsClicked(true)
+        }
     }
 
     if (!isClick) {
@@ -49,7 +53,7 @@ const Cover = () => {
 
     return (
         <div className="bg-coverImg bg-[center_bottom_3rem] bg-cover w-full h-screen">
-            <div className="overlay h-screen flex flex-col justify-between items-center py-24">
+            <div className="bg-blue-dark bg-opacity-60 h-screen flex flex-col justify-between items-center py-24">
                 <WeddingOfCard
                     nama = "iftah & rangga"
                     tanggal = "25 januari 2025"

@@ -14,7 +14,10 @@ export default {
         'black-rangga' : '#121212'
       },
       backgroundImage : {
-        'coverImg' : "url('/src/assets/images/DSCF4332-12323-1.png')"
+        'coverImg' : "url('/src/assets/images/DSCF4332-12323-1.png')",
+        'section-two' : "url('/src/assets/images/imgsectiontwo.png')",
+        'event-img' : "url('/src/assets/images/imgevent.png')",
+        'storyImg' : "url('/src/assets/images/imgStory.png')"
       }
     },
   },
