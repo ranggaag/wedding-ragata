@@ -4,11 +4,13 @@ import DescriptionText from "../text/DescriptionText"
 
 const StoryCard = ({ time, title, description }) => {
   return (
-    <div className="px-5 py-8 flex flex-col gap-4 items-center text-center text-white-middle rounded-lg">
-        <h1 className="text-xl">
-            {time}
-        </h1>
+    <div className="px-5 py-8 flex flex-col gap-4 items-start text-justify text-white-middle rounded-lg">
+      <div className="flex flex-row gap-3 items-center">
         <MainTitle title={title} />
+        <h1 className="text-lg">
+            ( {time} )
+        </h1>
+      </div>
         <DescriptionText>
             {description}
         </DescriptionText>

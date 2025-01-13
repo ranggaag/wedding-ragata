@@ -1,3 +1,4 @@
+// import { motion } from "motion/react"
 import DescriptionText from "../components/text/DescriptionText"
 
 const SectionTwo = () => {
