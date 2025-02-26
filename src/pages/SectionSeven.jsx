@@ -1,39 +1,60 @@
 import MainTitle from "../components/title/MainTitle"
 import DescriptionText from "../components/text/DescriptionText"
-import ImgLove from "../assets/images/imglovestory.png"
 import StoryCard from "../components/cards/StoryCard"
+import { motion } from "framer-motion"
 
+const slideInUp = {
+  hidden: { y: 100, opacity: 0 },
+  visible: { y: 0, opacity: 1 },
+}
 
 const SectionSeven = () => {
+
   return (
     <div className="flex flex-col gap-16">
-        <div className="px-5 pt-16 pb-24 flex flex-col gap-5 items-center text-center bg-grey-light">
-            <MainTitle title="Our Love Story" />
-            <DescriptionText>
-            “Happy marriages begin when we marry the ones we love, and they blossom when we love the ones we marry”
-            </DescriptionText>
-        </div>
-        <div className="-mt-32 relative flex flex-col items-center ">
-          <span className="absolute overlay w-[353px] h-[280px] rounded-lg"></span>
-          <img src={ImgLove} alt="" className="h-[280px] object-cover rounded-lg"/> 
-        </div>
-        <div className="px-5 flex flex-col gap-16">
+        <motion.div
+          className="flex flex-col gap-5 items-center text-center text-white-middle"
+          initial="hidden"
+          whileInView="visible"
+          variants={slideInUp}
+          transition={{ duration: 0.5 }}
+        >
+          <MainTitle title="Our Love Story" />
+          <DescriptionText>
+          “Happy marriages begin when we marry the ones we love, and they blossom when we love the ones we marry”
+          </DescriptionText>
+        </motion.div>
+        <motion.div
+          className="bg-storyImg w-full h-[250px] bg-cover bg-center rounded-xl"
+          initial="hidden"
+          whileInView="visible"
+          variants={slideInUp}
+          transition={{ duration: 0.5 }}
+        >
+        </motion.div>
+        <motion.div
+          className="flex flex-col gap-16 rounded-xl"
+          initial="hidden"
+          whileInView="visible"
+          variants={slideInUp}
+          transition={{ duration: 0.5 }}
+        >
           <StoryCard
             time="2016"
             title="Awal Bertemu"
-            description="Dimulai dari bangku kuliah kami berkenalan. Sejak saat itu hingga kini kami kami menjalani hubungan sampai menuju pelaminan."
+            description="Kami berkenalan ketika masih menjadi mahasiswa di Universitas yang sama. Sejak saat itu hingga kini, kami menjalani hubungan yang pasti ada kalanya bertemu rasa bahagia ataupun bertemu kerikil ditiap jalan yang kami lalui."
           />
           <StoryCard
             time="2024"
-            title="Bertunagan"
-            description="Dalam pertimbangan mental dan finansial, meskipun keadaan kami sulit. 12 Oktober 2024 kami memutuskan untuk bertunangan untuk menuju jenjang hubungan yang lebih dalam."
+            title="Lamaran"
+            description="Setelah melewati pertimbangan yang cukup panjang, kami pada akhirnya merasa siap untuk melaksanakan lamaran pada tanggal 12 Oktober 2024."
           />
           <StoryCard
             time="2025"
             title="Pernikahan"
-            description="25 Januari 2025 kami memutuskan untuk menikah. Dengan persiapan yang sebentar dan bekal finansial yang tidak banyak, alhamdulillah Allah memberikan jalan bagi kami menuju pernikahan."
+            description="Pada tanggal 25 Januari 2025 kami sepakat memutuskan untuk menikah. Semoga pernikahan kami diridhai Allah SWT dan bisa saling menerima kelebihan ataupun kekurangan satu sama lainnya."
           />
-        </div>
+        </motion.div>
     </div>
   )
 }

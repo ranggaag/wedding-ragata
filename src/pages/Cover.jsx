@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import CoverButton from "../components/button/CoverButton"
 import LoadingAnimation from "../components/animation/loading/LoadingAnimation"
 import WeddingOfCard from "../components/cards/WeddingOfCard"
@@ -6,15 +6,21 @@ import GuestNameCard from "../components/cards/GuestNameCard"
 
 const Cover = () => {
 
+    const audioFile = "https://mywedding.ragata.id/audio/rusuk-gery-gany.mp3"
+
     const [guestName, setGusetName] = useState("Nama Tamu")
     const [loading, setLoading] = useState(true)
     const [isClick, setIsClick] = useState(false)
-    const [isClicked, setIsClicked] = useState(false);
+    const [isClicked, setIsClicked] = useState(false)
+
+    const audioRef = useRef(new Audio(audioFile))
 
     const toggleClick = () => {
         if(!isClicked) {
             setIsClick(!isClick)
             setIsClicked(true)
+
+            audioRef.current.play()
         }
     }
 

@@ -17,7 +17,7 @@ export default {
         'coverImg' : "url('/src/assets/images/DSCF4332-12323-1.png')",
         'section-two' : "url('/src/assets/images/imgsectiontwo.png')",
         'event-img' : "url('/src/assets/images/imgevent.png')",
-        'storyImg' : "url('/src/assets/images/imgStory.png')"
+        'storyImg' : "url('/src/assets/images/imglovestory.png')"
       }
     },
   },

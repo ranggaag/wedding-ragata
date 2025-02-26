@@ -7,7 +7,7 @@
 
 @layer {
     .weddingof {
-        @apply text-sm average capitalize text-white-middle
+        @apply text-lg average capitalize text-white-middle
     }
 }
 
@@ -48,3 +48,13 @@ body {
 .border-radius {
     border-radius : 1000px 1000px 50px 50px;
 }
+
+
+.wishes::--webkit-scrollbar {
+    display: none;
+}
+
+.wishes {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

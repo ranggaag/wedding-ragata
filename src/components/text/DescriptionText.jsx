@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const DescriptionText = ({ children }) => {
   return (
-    <h2 className="text-sm leading-6">
+    <h2 className="text-base leading-6">
         {children}
     </h2>
   )

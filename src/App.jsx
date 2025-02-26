@@ -1,10 +1,15 @@
-import Index from "./pages/index"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import First from "./pages/index"
+import Second from "./special/index"
 
 const App = () => {
   return (
-    <div>
-      <Index />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<First />} />
+        <Route path='/wedding-iftah-rangga' element={<Second />} />
+      </Routes>
+    </Router>
   )
 }
 
